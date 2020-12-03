@@ -41,3 +41,4 @@ document.querySelector('.menu-button').addEventListener('click', function() {
 toClose.addEventListener('click', function() {
     menu.hidden = true;
 })
+
