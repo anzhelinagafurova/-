@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Helvetica Neue OTS';
-    src: url('Helvetica Neue.eot');
-    src: local('Helvetica Neue'), local('Helvetica Neue'), url('fonts/Helvetica Neue.ttf') format('truetype');
+    font-family: "Helvetica Neue OTS";
+    src: url("Helvetica Neue.eot");
+    src: local("Helvetica Neue"), local("Helvetica Neue"), url("fonts/Helvetica Neue.ttf") format("truetype");
     font-weight: 200;
 }
 
@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: 'Helvetica Neue OTS';
+    font-family: "Helvetica Neue OTS";
     font-size: 17px;
 }
 
@@ -44,14 +44,14 @@ a {
             justify-content: space-between;
             margin-bottom: 30%;
             a:first-child {
-                color: #405CEF;
+                color: #405cef;
             }
         }
     }
 }
 
 .block-1 {
-    background: url('img/background.png') border-box no-repeat;
+    background: url("img/background.png") border-box no-repeat;
     background-attachment: scroll;
     background-size: cover;
     padding: 50px 0px;
@@ -76,7 +76,7 @@ a {
             top: 10px;
         }
         .lang {
-            color: #405CEF;
+            color: #405cef;
             margin-left: 80px/1060px * 100%;
         }
         .menu-button {
@@ -85,7 +85,7 @@ a {
     }
     .slider {
         @include center;
-        margin-top: 250px/1090px*100%;
+        margin-top: 250px/1090px * 100%;
         position: relative;
         .text1,
         .text2,
@@ -97,17 +97,17 @@ a {
             margin: 38px/1060px * 100% 0px;
             .text-block1 {
                 font-size: 40px;
-                width: 712px/1920px*100%;
+                width: 712px/1920px * 100%;
                 font-weight: bold;
                 line-height: 1.1;
-                margin-right: 48px/1920px*100%;
+                margin-right: 48px/1920px * 100%;
             }
             .text-block2 {
-                width: 560px/1920px*100%;
+                width: 560px/1920px * 100%;
                 line-height: 1.2;
                 padding-top: 10px;
                 button {
-                    background: #405CEF;
+                    background: #405cef;
                     color: white;
                     width: 120px;
                     height: 45px;
@@ -184,5 +184,194 @@ a {
     .nav {
         display: flex;
         flex-direction: column;
+    }
+}
+
+.block-3 {
+    background: #ebf8ff;
+    .block-3-upper {
+        padding: 80px 72px/1920px * 100%;
+        display: flex;
+        flex-direction: row;
+        .text1 {
+            font-size: 18px;
+            width: 45%;
+        }
+        .text2 {
+            font-size: 38px;
+            width: 55%;
+            span {
+                text-decoration: underline;
+                color: #405cef;
+            }
+        }
+    }
+    hr {
+        background: lightgrey;
+        color: lightgrey;
+        height: 2px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .block-3-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 72px/1920px * 100% 80px;
+        img {
+            height: 35px;
+            width: 8%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .block-3 .block-3-upper .text2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .block-3 .block-3-upper {
+        flex-direction: column;
+    }
+    .block-3 .block-3-upper .text1,
+    .block-3 .block-3-upper .text2 {
+        margin: 10px auto;
+        width: 90%;
+        text-align: left;
+    }
+    .block-3 .block-3-bottom {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        img {
+            width: 100px;
+            margin: 0px 10px;
+        }
+    }
+}
+
+.block-4 {
+    padding: 50px 0px;
+    width: 100%;
+    @include center;
+    .flex-5 {
+        display: flex;
+        justify-content: space-between;
+        .flex-5-left {
+            width: 25%;
+            .text-1 {
+                margin-top: 15%;
+                font-size: 18px;
+                width: 100%;
+                margin-bottom: 100%;
+            }
+            .btn {
+                border: 1px solid #405cef;
+                border-radius: 15px;
+                background-color: transparent;
+                width: 60%;
+                height: 60px;
+                color: #405cef;
+                font-size: 16px;
+            }
+        }
+        .flex-5-right {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            .person-block {
+                width: 25%;
+                margin: 7% 2%;
+                .img {
+                    width: 100%;
+                    filter: grayscale(100%);
+                }
+                .img-no-filtr {
+                    width: 100%;
+                }
+                .name {
+                    margin: 10% auto;
+                    line-height: 28px;
+                    font-size: 24px;
+                    text-align: left;
+                }
+                .post {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .btn-mob {
+            display: none;
+            border: 1px solid #405cef;
+            border-radius: 15px;
+            background-color: transparent;
+            width: 60%;
+            height: 60px;
+            color: #405cef;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .block-4 .flex-5 .flex-5-left .btn {
+        font-size: 12px;
+    }
+    .block-4 .flex-5 .flex-5-right .person-block .name {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block-4 .flex-5 .flex-5-right .person-block .post {
+        font-size: 10px;
+        line-height: 13px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .block-4 .flex-5 {
+        flex-direction: column;
+    }
+    .block-4 .flex-5 .flex-5-left .text-1 {
+        margin-bottom: 15%;
+    }
+    .block-4 .flex-5 .flex-5-left .btn {
+        display: none;
+    }
+    .block-4 .flex-5 .flex-5-right {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0;
+        overflow: hidden;
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .block-4 .flex-5 .flex-5-right .person-block {
+        width: 90%;
+        min-width: 50%;
+        margin-right: 15%;
+    }
+    .block-4 .flex-5 .flex-5-right .person-block .name {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .block-4 .flex-5 .flex-5-right .person-block .post {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .block-4 .flex-5 .flex-5-left {
+        width: 100%;
+    }
+    .block-4 .flex-5 .btn-mob {
+        display: block;
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .block-4 .flex-5 .flex-5-right .person-block {
+        min-width: 80%;
     }
 }
