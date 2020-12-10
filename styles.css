@@ -41,7 +41,7 @@ a {
   margin-bottom: 30%;
 }
 .menu .menu-container p:first-child a:first-child {
-  color: #405CEF;
+  color: #405cef;
 }
 
 .block-1 {
@@ -73,7 +73,7 @@ a {
   top: 10px;
 }
 .block-1 .nav .lang {
-  color: #405CEF;
+  color: #405cef;
   margin-left: 7.5471698113%;
 }
 .block-1 .nav .menu-button {
@@ -107,7 +107,7 @@ a {
   padding-top: 10px;
 }
 .block-1 .slider .text .text-block2 button {
-  background: #405CEF;
+  background: #405cef;
   color: white;
   width: 120px;
   height: 45px;
@@ -193,7 +193,10 @@ a {
 }
 .block-3 .block-3-upper .text2 span {
   text-decoration: underline;
-  color: #405CEF;
+
+  color: #405cef;
+
+
 }
 .block-3 hr {
   background: lightgrey;
@@ -237,5 +240,140 @@ a {
   .block-3 .block-3-bottom img {
     width: 100px;
     margin: 0px 10px;
+  }
+
+}
+.block-4 {
+  padding: 50px 0px;
+  width: 100%;
+  width: 91.09375%;
+  margin: 0px auto;
+}
+.block-4 .flex-5 {
+  display: flex;
+  justify-content: space-between;
+}
+.block-4 .flex-5 .flex-5-left {
+  width: 25%;
+}
+.block-4 .flex-5 .flex-5-left .text-1 {
+  margin-top: 15%;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 100%;
+}
+.block-4 .flex-5 .flex-5-left .btn {
+  border: 1px solid #405cef;
+  border-radius: 15px;
+  background-color: transparent;
+  width: 60%;
+  height: 60px;
+  color: #405cef;
+  font-size: 16px;
+}
+.block-4 .flex-5 .flex-5-right {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.block-4 .flex-5 .flex-5-right .person-block {
+  width: 25%;
+  margin: 7% 2%;
+}
+.block-4 .flex-5 .flex-5-right .person-block .img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.block-4 .flex-5 .flex-5-right .person-block .img-no-filtr {
+  width: 100%;
+}
+.block-4 .flex-5 .flex-5-right .person-block .name {
+  margin: 10% auto;
+  line-height: 28px;
+  font-size: 24px;
+  text-align: left;
+}
+.block-4 .flex-5 .flex-5-right .person-block .post {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+.block-4 .flex-5 .btn-mob {
+  display: none;
+  border: 1px solid #405cef;
+  border-radius: 15px;
+  background-color: transparent;
+  width: 60%;
+  height: 60px;
+  color: #405cef;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1400px) {
+  .block-4 .flex-5 .flex-5-left .btn {
+    font-size: 12px;
+  }
+
+  .block-4 .flex-5 .flex-5-right .person-block .name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .block-4 .flex-5 .flex-5-right .person-block .post {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .block-4 .flex-5 {
+    flex-direction: column;
+  }
+
+  .block-4 .flex-5 .flex-5-left .text-1 {
+    margin-bottom: 15%;
+  }
+
+  .block-4 .flex-5 .flex-5-left .btn {
+    display: none;
+  }
+
+  .block-4 .flex-5 .flex-5-right {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .block-4 .flex-5 .flex-5-right .person-block {
+    width: 90%;
+    min-width: 50%;
+    margin-right: 15%;
+  }
+
+  .block-4 .flex-5 .flex-5-right .person-block .name {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .block-4 .flex-5 .flex-5-right .person-block .post {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .block-4 .flex-5 .flex-5-left {
+    width: 100%;
+  }
+
+  .block-4 .flex-5 .btn-mob {
+    display: block;
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .block-4 .flex-5 .flex-5-right .person-block {
+    min-width: 80%;
   }
 }
