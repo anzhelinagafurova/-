@@ -193,7 +193,10 @@ a {
 }
 .block-3 .block-3-upper .text2 span {
   text-decoration: underline;
+
   color: #405cef;
+
+
 }
 .block-3 hr {
   background: lightgrey;
@@ -238,6 +241,7 @@ a {
     width: 100px;
     margin: 0px 10px;
   }
+
 }
 .block-4 {
   padding: 50px 0px;
