@@ -190,9 +190,7 @@ a {
 .block-3 {
     background: #ebf8ff;
     .block-3-upper {
-
         padding: 80px 72px/1920px * 100%;
-
         display: flex;
         flex-direction: row;
         .text1 {
@@ -204,9 +202,12 @@ a {
             width: 55%;
             span {
                 text-decoration: underline;
-
-                color: #405CEF;
+                color: #405cef;
             }
+        }
+        .columns {
+            font-size: 18px;
+            display: flex;
         }
     }
     hr {
@@ -215,7 +216,6 @@ a {
         height: 2px;
         width: 95%;
         margin: 0 auto;
-
     }
     .block-3-bottom {
         display: flex;
@@ -228,13 +228,19 @@ a {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .block-3 .block-3-upper .text2 {
         font-size: 30px;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
+    .block-3 .block-3-upper .text2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .block-3 .block-3-upper {
         flex-direction: column;
     }
@@ -373,13 +379,69 @@ a {
         display: block;
         margin-top: 10%;
     }
+    .block-3 .block-3-upper .columns {
+        font-size: 18px;
+    }
 }
+
 @media screen and (max-width: 450px) {
     .block-4 .flex-5 .flex-5-right .person-block {
         min-width: 80%;
     }
 }
-            margin: 0px 10px
+
+.orange {
+    background: #FFF4EB;
+}
+
+@media screen and (max-width: 750px) {
+    .block-3 .block-3-upper .columns {
+        flex-direction: column;
+    }
+}
+
+.block-5 {
+    display: flex;
+    flex-direction: row;
+}
+
+.archive {
+    background: none;
+    .block-3-upper {
+        .text2 {
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            .year {
+                display: flex;
+                flex-direction: column;
+                p {
+                    margin-bottom: 40px;
+                }
+                a {
+                    color: #405cef;
+                    text-decoration: underline;
+                    margin: 5px 0px;
+                }
+            }
         }
+    }
+    button {
+        background: white;
+        color: #405cef;
+        width: 150px;
+        height: 55px;
+        border: 1px solid #405cef;
+        border-radius: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+        top: -140px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .archive .block-3-upper button {
+        margin: 0 auto;
     }
 }
