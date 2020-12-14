@@ -299,6 +299,7 @@ h3 {
     color: #405CEF;
     font-size: 16px;
     margin: 5% auto;
+    cursor: pointer;
 }
 
 .download-pdf {

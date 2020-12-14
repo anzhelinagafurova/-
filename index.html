@@ -12,11 +12,11 @@
         <div class="menu-container">
             <p><a href="">en</a>
                 <a href="#!" id="toClose">закрыть</a></p>
-            <p><a href="">свежий номер</a></p>
-            <p><a href="">о журнале</a></p>
-            <p><a href="">авторам</a></p>
-            <p><a href="">архив</a></p>
-            <p><a href="">контакты</a></p>
+            <p><a href="#menu-content-1">свежий номер</a></p>
+            <p><a href="#menu-content-2">о журнале</a></p>
+            <p><a href="#menu-content-3">авторам</a></p>
+            <p><a href="#menu-content-4">архив</a></p>
+            <p><a href="#menu-content-5">контакты</a></p>
         </div>
     </div>
 
@@ -24,15 +24,15 @@
         <div class="nav">
             <img class="nav-left" src="img/Component2.png" alt="Экономика региона">
             <p class="nav-right lang"><a href="">en</a></p>
-            <p class="nav-right"><a href="">контакты</a></p>
+            <p class="nav-right"><a href="#menu-content-5">контакты</a></p>
             <img class="nav-right" src="img/Rectangle3.png" alt="разделитель">
-            <p class="nav-right"><a href="">архив</a></p>
+            <p class="nav-right"><a href="#menu-content-4">архив</a></p>
             <img class="nav-right" src="img/Rectangle3.png" alt="разделитель">
-            <p class="nav-right"><a href="">авторам</a></p>
+            <p class="nav-right"><a href="#menu-content-3">авторам</a></p>
             <img class="nav-right" src="img/Rectangle3.png" alt="разделитель">
-            <p class="nav-right"><a href="">о журнале</a></p>
+            <p class="nav-right"><a href="#menu-content-2">о журнале</a></p>
             <img class="nav-right" src="img/Rectangle3.png" alt="разделитель">
-            <p class="nav-right"><a href="">свежий номер</a></p>
+            <p class="nav-right"><a href="#menu-content-1">свежий номер</a></p>
             <p class="nav-right menu-button"><a href="#menu">меню</a></p>
         </div>
 
@@ -86,7 +86,7 @@
     <div class="block-2">
         <div class="text-block">
             <div class="flex-2">
-                <h2>Свежий номер</h2>
+                <h2 id="menu-content-1">Свежий номер</h2>
                 <div class="red-oval">
                     <p>№3 2020</p>
                 </div>
@@ -199,7 +199,7 @@
     <div class="block-4">
         <div class="flex-5">
             <div class="flex-5-left">
-                <div class="text-1">Редакция журнала</div>
+                <div id="menu-content-5" class="text-1">Редакция журнала</div>
                 <button class="btn">Вся команда редакции</button>
             </div>
             <div class="flex-5-right">
@@ -227,7 +227,7 @@
 
 <div class="block-3 orange">
     <div class="block-3-upper">
-        <div class="text1">Информация для авторов</div>
+        <div  id="menu-content-3" class="text1">Информация для авторов</div>
         <div class="text2">в связи с реконструкцией сайта журнала «Экономика региона» редакция осуществляет прием статей и рецензий на электронную почту <span>ekonomika_regiona@mail.ru</span>
             <br><br>более подробную информацию вы можете найти в разделе <br><span>как опубликоваться</span></div>
     </div>
@@ -244,7 +244,7 @@
 
 <div class="block-3 archive">
     <div class="block-3-upper">
-        <div class="text1">Архив</div>
+        <div id="menu-content-4" class="text1">Архив</div>
         <div class="text2">
 
             <div class="year">
@@ -284,6 +284,7 @@
     </div>
 </div>
 
+
 <div class="block-6 blue">
     <div>
         <div class="text1">Учредители журнала</div>
@@ -303,21 +304,44 @@
     </div>
 </div>
 
+<div class="block-7">
+    <div>
+        <div id="menu-content-2" class="text1">О журнале</div>
+    </div>
+    <hr>
+    <div >
+        <div class="big">
+            цель журнала – показать оригинальные результаты как теоретических, так и прикладных исследований в области региональной экономики
+        </div>
+        <div class="small">
+            Универсальный характер публикуемых статей позволяет осуществлять обмен знаниями об экономических практиках, применяемых в разных странах и их регионах.
+        </div>
+        <div class="small">
+            Присутствие в базах данных Scopus, Web of Science (ESCI), EBSCO, EconLit, RePEC, CitEc, Ulrich’s Periodicals Directory, DOAJ, eLIBRARY.RU, КиберЛенинка, НЭИКОН дает российским ученым возможность выйти на международный уровень публикаций и сделать их исследования доступными мировому научному сообществу.
+        </div>
+        <div class="small">
+            Журнал публикует статьи на двух языках – русском и английском и выходит 4 раза в год.
+        </div>
+    </div>
+    
+    <button>Все выпуски</button>
+    
+</div>
 <footer>
     <div class="footer-block1">
         ISSN 2072-6414 (Print)<br> E-ISSN 2411-1406
     </div>
     <div class="footer-block2">
         <div class="nav">
-            <p class="nav-right"><a href="">свежий номер</a></p>
+            <p class="nav-right"><a href="#menu-content-1">свежий номер</a></p>
             <img class="nav-right" src="img/Rectangle6.jpg" alt="разделитель">
-            <p class="nav-right"><a href="">о журнале</a></p>
+            <p class="nav-right"><a href="#menu-content-2">о журнале</a></p>
             <img class="nav-right" src="img/Rectangle6.jpg" alt="разделитель">
-            <p class="nav-right"><a href="">авторам</a></p>
+            <p class="nav-right"><a href="#menu-content-3">авторам</a></p>
             <img class="nav-right" src="img/Rectangle6.jpg" alt="разделитель">
-            <p class="nav-right"><a href="">архив</a></p>
+            <p class="nav-right"><a href="#menu-content-4">архив</a></p>
             <img class="nav-right" src="img/Rectangle6.jpg" alt="разделитель">
-            <p class="nav-right"><a href="">контакты</a></p>
+            <p class="nav-right"><a href="#menu-content-5">контакты</a></p>
             <p class="nav-right lang"><a href="">en</a></p>
 
         </div>
